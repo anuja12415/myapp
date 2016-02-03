@@ -1,0 +1,8 @@
+{
+  "name": "ui-cards",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "parallax": "2.1.3"
+  }
+}
