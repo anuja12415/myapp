@@ -2,32 +2,24 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="/libs/bootstrap4/bootstrap.css" />
-<link rel="stylesheet" href="/styles/main.css" />
+    <title>EffeJobs</title>
+    <link rel="stylesheet" href="/libs/bootstrap4/bootstrap.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
 
 </head>
-<body class="index-page">
+<body class="index-page" ng-app="DemoApp">
 	<header></header>
 
-	<div class="container">
+	<div class="container" ng-controller="DemoController">
 		<div class="row">
 			<div class="col-md-8 col-offset-2">
-				<h3>Sample Implementations</h3>
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8 col-offset-2">
-				<ul class="list-group">
-					<li class="list-group-item"><a href="samples/sample1.html">Bootstrap
-							grid layout example</a></li>
-					<li class="list-group-item"><a href="samples/sample2.html">Flex and Sass basics</a></li>
-					<li class="list-group-item"><a href="samples/sample3.html">HTML Form</a></li>
-				</ul>
-
+                            <h3>{{message}}</h3>
 			</div>
 		</div>
 	</div>
 	<footer></footer>
+        <script type="text/javascript" src="/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/scripts/controllers.js"></script>
+        <script type="text/javascript" src="/scripts/app.js"></script>
 </body>
 </html>

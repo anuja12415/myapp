@@ -1,2 +1,2 @@
-var module =  angular.module("DemoApp", []);
+var module =  angular.module("DemoApp", ["DemoApp.controllers"]);
 

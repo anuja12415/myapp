@@ -1,4 +1,5 @@
 var appControllers = angular.module("DemoApp.controllers", []);
 
-appControllers.controller("DemoContrller", ["$scope", function($scope) {
+appControllers.controller("DemoController", ["$scope", function($scope) {
+    $scope.message = "Hello World!";
 }]);
