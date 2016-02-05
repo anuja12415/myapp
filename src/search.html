@@ -1,0 +1,102 @@
+<html ng-app="DemoApp">
+<head>
+<link rel="stylesheet" href="/libs/bootstrap4/bootstrap.css" />
+<link rel="stylesheet" href="/styles/search.css" />
+<link rel="stylesheet"
+	href="/libs/angular-material/angular-material.css" />
+<link rel="stylesheet"
+	href="/libs/angular-material/angular-material.layouts.css" />
+
+
+
+</head>
+
+
+<body ng-controller="mycontroller">
+	<section>
+		<div layout="row" flex class="section1" style="background-color: red;">
+
+			<div flex="20" layout=row layout-align="center">
+				<img class="effelogo" src="/images/home/logo.png">
+				<div>EffeJobs</div>
+			</div>
+			<div flex=50 layout="column" layout-align="center center">
+				<div>
+					<input type="text">
+				</div>
+				<div>
+					<input type="text"> <input type="text">
+				</div>
+				<div>
+					<input type="range" min="0" max="10" value="5" />
+				</div>
+
+			</div>
+
+
+
+
+			<div></div>
+
+
+
+		</div>
+	</section>
+	<!-- Section 1 ends here -->
+
+
+	<section>
+	<div layout="column" >
+		<div layout="row" flex="25" ng-repeat="company in companies">
+			
+			<div flex="25" style="border:solid black;">
+			<div layout="column" flex>
+			
+			
+			<div flex="30" layout="row">
+			<div flex="30">
+			<img src="{{company.image}}">
+			
+			
+			</div>
+			
+			<div flex="70">
+			<h6>{{company.title}}</h6>
+			</div>
+			
+			</div>
+            
+            
+           <div flex="70">
+           <p>
+           {{company.name}}<br>{{company.address}}<br>{{company.salary}}<br>{{company.time}}
+           
+           
+           </p>
+           
+           </div>
+       
+            </div>
+       
+        </div>
+        </div>
+		</div>
+	</section>
+	<!-- Section2 end -->
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="/libs/angular/angular.min.js"></script>
+	<script type="text/javascript"
+		src="/libs/angular-material/angular-material.min.js"></script>
+	<script type="text/javascript" src="/scripts/job.js"></script>
+	<script type="text/javascript" src="/scripts/app.js"></script>
+</body>
+</html>
