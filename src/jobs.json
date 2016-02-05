@@ -1,0 +1,22 @@
+{
+	"jobs": [{
+	    "image":"/images/firstbig.png"
+		"title": "Delivery boy",
+		"name": "Cafe Coffe Day",
+		"address": "HSR Layout Bangalore",
+		"salary": "3k-4k",
+		"time": "10am-1pm"
+	}, {
+		"title": "Delivery boy",
+		"name": "MacDonalds",
+		"address": "HSR Layout Bangalore",
+		"salary": "4k-6k",
+		"time": "10am-6pm"
+	}, {
+		"title": "Dunkins Donuts",
+		"name": "Cafe Coffe Day",
+		"address": "HSR Layout Bangalore",
+		"salary": "5k-7k",
+		"time": "10am-4pm"
+	}]
+}
