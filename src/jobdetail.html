@@ -46,7 +46,7 @@
 
 
 	<section>
-		<div flex layout="row" layout-align="center" ng-repeat="company in companies">
+		<div flex layout="row" layout-align="center" ng-repeat="company in companies|filter:searchquery">
 			<div flex="100" layout="row">
 				<h2>DELIVERY BOY</h2>
 				<br>
@@ -140,7 +140,7 @@
 
 
 	<section>
-		<div layout="row" layout-align="center" ng-repeat="company in companies">
+		<div layout="row" layout-align="center" ng-repeat="company in companies|filter:searchquery">
 			<div flex="80">
 				<div>
 					<h4>Details</h4>
