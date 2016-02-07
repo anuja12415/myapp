@@ -1,0 +1,31 @@
+{
+	"jobs": [{
+			"name": "Cafe Coffe Day",
+			"address": "HSR Layout Bangalore",
+			"salary": "3k-4k",
+			"time": "10am-1pm",
+			"sk1": "Delivery Experience",
+			"sk2": "2 Wheeler Driving",
+			"sk3": "Pizza Delivery",
+			"exp": "2-3 Years",
+			"payment": "Monthly",
+			"domain": "Food",
+			"edu": "+2 & Above",
+			"d1": "Perform pre - trip examination of vehicle ",
+			"d2": "Pack coffe and related products",
+			"d3": "Collect cash and coupons from customers",
+			"d4": "Drive personal or employee owned vehicle",
+			"d5": "Promote pizza products,distribute door to door",
+			"d6": "Sell coffe and other products at well known hangers"
+		}
+
+
+
+
+
+
+
+
+
+	]
+}

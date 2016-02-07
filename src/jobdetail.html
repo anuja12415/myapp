@@ -1,0 +1,175 @@
+<html ng-app="DemoApp">
+<head>
+<link rel="stylesheet" href="/libs/bootstrap4/bootstrap.css" />
+<link rel="stylesheet" href="/styles/jobdetail.css" />
+<link rel="stylesheet"
+	href="/libs/angular-material/angular-material.css" />
+<link rel="stylesheet"
+	href="/libs/angular-material/angular-material.layouts.css" />
+
+
+
+</head>
+
+
+<body ng-controller="mycontroller">
+	<section>
+		<div layout="row" flex class="section1">
+
+			<div flex="20" layout=row layout-align="center">
+				<img class="effelogo" src="/images/home/logo.png">
+				<div>EffeJobs</div>
+			</div>
+			<div flex=50 layout="column" layout-align="center center">
+				<div>
+					<input ng-model="searchquery" type="text">
+				</div>
+				<div layout="row">
+					<input type="text" flex="50"> <input type="text" flex="50">
+				</div>
+				<div>
+					<input type="range" min="0" max="10" value="5" />
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+	</section>
+	<!-- Section 1 ends here -->
+
+
+	<section>
+		<div flex layout="row" layout-align="center" ng-repeat="company in companies">
+			<div flex="100" layout="row">
+				<h2>DELIVERY BOY</h2>
+				<br>
+				<div flex="40">
+
+					<md-card class="job-cards" flex="25"> </br>
+					<md-card-content>
+					<h2 class="companytitle">{{company.title}}</h2>
+					<p>
+						<img class="icon" src="images/home/home.png"> &nbsp{{
+						company.name}}
+					</p>
+					<p>
+						<img class="icon" src="images/home/location.png"> &nbsp{{
+						company.address}}
+					</p>
+					<p>
+						<img class="icon" src="images/home/money.png"> &nbsp{{
+						company.salary}}
+					</p>
+					<p>
+						<img class="icon" src="images/home/time.png"> &nbsp{{
+						company.time}}
+					</p>
+					</md-card-content> <md-card-actions> </md-card-actions> </md-card>
+
+
+				</div>
+				<!-- Card ends here -->
+				<div flex="60">
+					<div>
+						<div>
+							<h4>Skills</h4>
+						</div>
+						<div layout="row">
+							<div flex="33">
+								<h6>{{compnay.sk1}}</h6>
+							</div>
+							<div flex="33">
+								<h6>{{compnay.sk2}}</h6>
+							</div>
+							<div flex="33">
+								<h6>{{compnay.sk3}}</h6>
+							</div>
+						</div>
+					</div>
+					<br>
+
+
+
+					<div layout="row">
+						<div flex=50 layout="row">
+							<div flex="50">
+								<div>
+									<h4>Experience</h4>
+									<h6>{{company.exp}}</h6>
+								</div>
+							</div>
+							<div>
+								<div>
+									<h4>Salary</h4>
+									<h6>{{company.payment}}</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div layout="row">
+						<div flex=50 layout="row">
+							<div flex="50">
+								<div>
+									<h4>Domain</h4>
+									<h6>{{company.domain}}</h6>
+								</div>
+							</div>
+							<div>
+								<div>
+									<h4>Education</h4>
+									<h6>{{company.edu}}</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</section>
+
+
+	<section>
+		<div layout="row" layout-align="center" ng-repeat="company in companies">
+			<div flex="80">
+				<div>
+					<h4>Details</h4>
+					<p>{{company.d1}}</p>
+					<p>{{company.d2}}</p>
+					<p>{{company.d3}}</p>
+					<p>{{company.d4}}</p>
+					<p>{{company.d5}}</p>
+					<p>{{company.d6}}</p>
+				</div>
+				<div>
+					<button>Add to favorites</button>
+					<button>Apply for Job</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="/libs/angular/angular.min.js"></script>
+	<script type="text/javascript"
+		src="/libs/angular-material/angular-material.min.js"></script>
+	<script type="text/javascript" src="/scripts/jobdetailcontroller.js"></script>
+	<script type="text/javascript" src="/scripts/app.js"></script>
+</body>
+</html>
